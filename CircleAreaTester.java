@@ -1,3 +1,7 @@
+/*
+javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar CircleAreaTester.java
+java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore CircleAreaTester
+*/
 import static org.junit.Assert.assertEquals;
 import org.junit.*;
 
@@ -22,6 +26,6 @@ public class CircleAreaTester {
     public void testCircleArea2(){
         area2.CircleAreaCalc(-1.0);
         //3.14 * 2 * 2 = 3.14 * 4 = 12.56
-        assertEquals("Test 1", "3.14", area2.result());
+        assertEquals("Test 1", "-1.0", area2.result());
     }
 }
